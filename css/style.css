@@ -3178,11 +3178,15 @@ body::after {
   align-self: center;
 }
 
-.popup__info .popup__content {
+.card__button:hover::before {
+  color: #037E8C;
+}
+
+.power__content {
   max-width: 18.9375rem;
   overflow: hidden;
 }
-.popup__info .popup__content::before {
+.power__content::before {
   position: absolute;
   content: "";
   background: url("../img/tour/vec2.png") 0 0 no-repeat;
@@ -3192,19 +3196,24 @@ body::after {
   height: 100%;
   object-fit: cover;
 }
-
-.popup__info .popup__text {
+.power__text {
   padding: 5.5rem 2.1875rem;
+}
+.power__title {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 165%;
 }
-.popup__info .popup__text span {
+.power__title span {
   font-weight: 600;
 }
-
-.card__button:hover::before {
-  color: #037E8C;
+.power__sub-title {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 165%;
+}
+.power__sub-title span {
+  font-weight: 600;
 }
 .swiper {
   overflow: hidden;
