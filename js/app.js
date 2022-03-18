@@ -783,7 +783,7 @@
             }
             open(selectorValue) {
                 if (bodyLockStatus) {
-                    this.bodyLock = document.documentElement.classList.contains("lock") ? true : false;
+                    this.bodyLock = document.documentElement.classList.contains("lock") && !this.isOpen ? true : false;
                     if (selectorValue && "string" === typeof selectorValue && "" !== selectorValue.trim()) {
                         this.targetOpen.selector = selectorValue;
                         this._selectorOpen = true;
