@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220318122348">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220401214455">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20220318122348" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20220401214455" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -17,73 +17,57 @@
 	<div class="wrapper">
 		<header data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-center" data-aos-once="true" data-scroll="120" data-scroll-show class="header">
 			<div class="header__container">
-				<a href="#" class="header__image-ibg"><picture><source data-srcset="img/logo.webp" type="image/webp"><img data-src="img/logo.png" alt="logo"></picture></a>
-				<div class="header__menu menu">
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li data-goto=".mainpage__destination" data-goto-header class="menu__item"><a href="#" class="menu__link">маршруты</a></li>
-							<li data-goto=".mainpage__foto" data-goto-header class="menu__item"><a href="#" class="menu__link">галерея</a></li>
-							<li data-goto=".mainpage__question" data-goto-header class="menu__item"><a href="#" class="menu__link">вопрос-ответ</a></li>
-							<li data-goto=".footer" class="menu__item"><a href="#" class="menu__link">контакты</a></li>
-							<li class="menu__item"><a data-popup="#popup-booking-base" class="menu__link">забронировать</a></li>
-						</ul>
-					</nav>
+				<div class="header__column header__column_logo">
+					<a href="" class="header__logo"><img data-src="img/logo.svg" alt="image"></a>
 				</div>
-				<div data-da=".menu__body, 767" class="header__body">
-					<a href="tel:+79283332645" class="header__phone _icon-header-phone">+7 928 333 26 45</a>
-					<a href="#" data-popup="#popup1" class="header__callback">Перезвоните мне</a>
+				<div class="header__column header__column_nav">
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li data-goto=".mainpage__destination" data-goto-header class="menu__item"><a href="#" class="menu__link">маршруты</a></li>
+								<li data-goto=".mainpage__foto" data-goto-header class="menu__item"><a href="#" class="menu__link">галерея</a></li>
+								<li data-goto=".mainpage__question" data-goto-header class="menu__item"><a href="#" class="menu__link">вопрос-ответ</a></li>
+								<li data-goto=".footer" class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+								<li class="menu__item"><a data-popup="#popup-booking-base" class="menu__link">забронировать</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__column header__column_slim">
+					<div data-da=".menu__body, 767" class="header__body">
+						<a href="tel:+79283332645" class="header__phone _icon-header-phone">+7 928 333 26 45</a>
+						<a href="#" data-popup="#popup1" class="header__callback">Перезвоните мне</a>
+					</div>
+
 				</div>
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
 			</div>
 		</header>
-
-
 		<main class="mainpage">
-			<div class="mainpage__expedition expedition">
+			<div data-fullscreen class="mainpage__expedition expedition">
 				<div class="expedition__slider swiper">
 					<div class="expedition__wrapper swiper-wrapper">
-						<div class="expedition__slide swiper-slide">
+						<div class="expedition__slide expedition__slide_one swiper-slide">
 							<div class="swiper-slide__container">
-								<div class="swiper-slide__content">
-									<div data-aos="flip-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" data-aos-once="true" class="expedition__title">Экскурсии на квадроциклах в Геленджике</div>
-									<div data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" class="expedition__text">приезжайте за новыми ощущениями и эмоциями!</div>
-									<button data-goto=".mainpage__destination" type="button" class="expedition__button">Подобрать маршрут</button>
+								<div class="expedition__content">
+									<div class="expedition__title">Экскурсии на квадроциклах в Геленджике</div>
+									<div class="expedition__text">приезжайте за новыми ощущениями и эмоциями!</div>
+									<button data-goto=".mainpage__destination" type="button" class="expedition__button">Подобрать
+										маршрут</button>
+								</div>
+							</div>
+						</div>
+						<div class="expedition__slide expedition__slide_two swiper-slide">
+							<div class="swiper-slide__container">
+								<div class="expedition__content">
+									<div class="expedition__title">Экскурсии на квадроциклах в Геленджике</div>
+									<div class="expedition__text">приезжайте за новыми ощущениями и эмоциями!</div>
+									<button data-goto=".mainpage__destination" type="button" class="expedition__button">Подобрать
+										маршрут</button>
+								</div>
+							</div>
+						</div>
 
-								</div>
-								<div class="swiper-scrollbar"></div>
-							</div>
-							<div class="expedition__image">
-								<picture><source data-srcset="img/expedition/fon1.webp" type="image/webp"><img data-src="img/expedition/fon1.jpg" class="swiper-lazy" alt="image"></picture>
-							</div>
-						</div>
-						<div class="expedition__slide swiper-slide">
-							<div class="swiper-slide__container">
-								<div class="swiper-slide__content">
-									<div class="expedition__title">Экскурсии на квадроциклах в Геленджике</div>
-									<div class="expedition__text">приезжайте за новыми ощущениями и эмоциями!</div>
-									<button data-goto=".mainpage__destination" type="button" class="expedition__button _icon-arrowButton">Подобрать
-										маршрут<span></span></button>
-								</div>
-								<div class="swiper-scrollbar"></div>
-							</div>
-							<div class="expedition__image">
-								<picture><source data-srcset="img/expedition/fon2.webp" type="image/webp"><img data-src="img/expedition/fon2.jpg" class="swiper-lazy" alt="image"></picture>
-							</div>
-						</div>
-						<div class="expedition__slide swiper-slide">
-							<div class="swiper-slide__container">
-								<div class="swiper-slide__content">
-									<div class="expedition__title">Экскурсии на квадроциклах в Геленджике</div>
-									<div class="expedition__text">приезжайте за новыми ощущениями и эмоциями!</div>
-									<button data-goto=".mainpage__destination" type="button" class="expedition__button _icon-arrowButton">Подобрать
-										маршрут<span></span></button>
-								</div>
-								<div class="swiper-scrollbar"></div>
-							</div>
-							<div class="expedition__image">
-								<picture><source data-srcset="img/expedition/gelendzhik2016.webp" type="image/webp"><img data-src="img/expedition/gelendzhik2016.jpg" class="swiper-lazy" alt="image"></picture>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -91,21 +75,21 @@
 				<div class="infolist__container">
 					<div class="infolist__list">
 						<div class="infolist__item">
-							<div data-aos="fade-right" data-aos-duration="500" data-aos-once="true" class="item-infolist">
+							<div data-aos="fade-right" data-aos-duration="1500" data-aos-once="true" class="item-infolist">
 								<div class="item-infolist__image"><img src="img/infolist/wood.svg" alt="image"></div>
 								<div class="item-infolist__title">Увлекательные экскурсии</div>
 								<div class="item-infolist__text">Маршруты от лесных дорожек
 									до полного бездорожья!</div>
 							</div>
 						</div>
-						<div data-aos="fade-right" data-aos-duration="500" data-aos-once="true" class="infolist__item">
+						<div data-aos="fade-right" data-aos-duration="1500" data-aos-once="true" class="infolist__item">
 							<div class="item-infolist">
 								<div class="item-infolist__image"><img src="img/infolist/moto.svg" alt="image"></div>
 								<div class="item-infolist__title">Надежная техника</div>
 								<div class="item-infolist__text">18 квадроциклов всех японских брендов</div>
 							</div>
 						</div>
-						<div data-aos="fade-left" data-aos-duration="500" data-aos-once="true" class="infolist__item">
+						<div data-aos="fade-left" data-aos-duration="1500" data-aos-once="true" class="infolist__item">
 							<div class="item-infolist">
 								<div class="item-infolist__image"><img src="img/infolist/head.svg" alt="image"></div>
 								<div class="item-infolist__title">Экипировка бесплатно</div>
@@ -113,7 +97,7 @@
 									выдается бесплатно</div>
 							</div>
 						</div>
-						<div data-aos="fade-left" data-aos-duration="500" data-aos-once="true" class="infolist__item">
+						<div data-aos="fade-left" data-aos-duration="1500" data-aos-once="true" class="infolist__item">
 							<div class="item-infolist">
 								<div class="item-infolist__image"><img src="img/infolist/instructor.svg" alt="image"></div>
 								<div class="item-infolist__title">Опытные инструктора</div>
@@ -372,7 +356,7 @@
 			</section>
 			<div class="mainpage__video-module video-module">
 				<div class="video-module__container">
-					<div class="video-module__block">
+					<div data-aos="flip-up" data-aos-duration="1500" data-aos-once="true" class="video-module__block">
 						<div class="video-module__text">"Экспедиция в никуда</div>
 						<video id="" poster="img/expedition/fon1.jpg" data-src="files/video1.mp4" class="video-module__item" controls preload="auto" </video>
 					</div>
@@ -1412,8 +1396,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220318122348"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js?_v=20220318122348"></script>
+	<script src="js/app.min.js?_v=20220401214455"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js?_v=20220401214455"></script>
 	<script>
 		AOS.init();
 	</script>
